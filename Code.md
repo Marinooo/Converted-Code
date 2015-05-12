@@ -3,12 +3,12 @@ Converted-Code - C# to Entity Framework - BEFORE & AFTER
 
 Before
 
-  [TestMethod]
-        public void SRSTransactiondataCleanTest()
-        {
-            using (SqlConnection sqlConn = new
-               SqlConnection(@"Data Source=localhost;Initial Catalog=DB;Integrated Security=SSPI;"))
-            {
+       [TestMethod]
+              public void SRSTransactiondataCleanTest()
+              {
+                 using (SqlConnection sqlConn = new
+                     SqlConnection(@"Data Source=localhost;Initial Catalog=DB;Integrated Security=SSPI;"))
+                 {
 
                 StringBuilder str = new StringBuilder();
                 str.Append(@"SELECT * FROM [dbo].[SRS_Ticket_Transaction_Stage_Cleaned]");
