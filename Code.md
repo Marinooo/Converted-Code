@@ -200,11 +200,11 @@ Before
 
 AFTER
 
-namespace Integration_Services_Tests
-{
-    [TestClass]
-    public class UnitTest1
-    {
+       namespace Integration_Services_Tests
+       {
+          [TestClass]
+         public class UnitTest1
+         {
         public static DateTime now;
         [TestMethod]
         public void SRSTransactiondataCleanTest()
@@ -338,7 +338,6 @@ namespace Integration_Services_Tests
                 Assert.AreEqual(true, auditRecordsCleaned.Single().Processing_Successful);
                 Assert.IsTrue(auditRecordsCleaned.Single().Table_Final_Row_Count > 10);
                 Assert.AreEqual(auditRecordCleaned.Table_Final_Row_Count, stageCleaned.Count());
-
             }
         }
     }
